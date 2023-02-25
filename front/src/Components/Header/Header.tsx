@@ -67,7 +67,16 @@ const Header = () => {
                             <p onMouseOver={handleMouseOver2}>
                                 Home Interior
                             </p>
-                            <Menu
+                            <p onMouseOver={handleMouseOver2}>
+                               Home Interior 2
+                            </p>
+                            <p onMouseOver={handleMouseOver2}>
+                               Home Interior 3
+                            </p>
+                            <p onMouseOver={handleMouseOver2}>
+                               Home Interior 4
+                            </p>
+                            {/* <Menu
                                 // className={classes.dropdown}
                                 anchorEl={anchorE2}
                                 keepMounted
@@ -77,7 +86,8 @@ const Header = () => {
                                 <MenuItem onClick={handleClose2}>Home Interior 2</MenuItem>
                                 <MenuItem onClick={handleClose2}>Home Interior 3</MenuItem>
                                 <MenuItem onClick={handleClose2}>Home Interior 4</MenuItem>
-                            </Menu>
+                            </Menu> */}
+
                             <p>
                                 Partner with us
                             </p>

@@ -18,7 +18,7 @@ export const useStyles = makeStyles({
         // justifyContent: "center",
     },
     headerText: {
-        backgroundColor: "yellow",
+        backgroundColor: "#ffe033",
         color: "black",
         width: "25%",
         fontWeight: "600",
