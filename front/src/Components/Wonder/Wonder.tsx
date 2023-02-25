@@ -31,7 +31,7 @@ const Wonder = () => {
         {steps.map((label) => (
           <Step key={label} sx={{
             '& .MuiStepLabel-root .Mui-completed': {
-              color: 'yellow', // circle color (COMPLETED)
+              color: '#ffe033', // circle color (COMPLETED)
             },
             '& .MuiStepLabel-label.Mui-completed.MuiStepLabel-alternativeLabel':
             {
@@ -53,7 +53,7 @@ const Wonder = () => {
            width:"2em !important",
            height:"2em !important",
            display:"block",
-            fill:" yellow",
+            fill:" #ffe033",
         }
           }}>
             <StepLabel style={{ color: "gray" }}>{label}</StepLabel>

@@ -22,8 +22,8 @@ const LetterNews = () => {
                         <div style={{ width: '50%', margin: "auto" }}>
                             <input type="search" placeholder='Your Email Id' style={{ width: "300px", height: " 35px ", color: "gray" }} />
                             <button style={{
-                                backgroundColor: "yellow", color: "black", margin: "10px", padding: "7px",
-                                border: " 3px solid yellow", borderRadius: "6px", fontSize:"12px"
+                                backgroundColor: "#ffe033", color: "black", margin: "10px", padding: "7px",
+                                border: " 3px solid  #ffe033", borderRadius: "6px", fontSize:"12px"
                             }}>SUBSCRIBE</button>
                         </div>
                     </div>

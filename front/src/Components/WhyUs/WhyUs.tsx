@@ -41,7 +41,7 @@ const WhyUs = () => {
                 {
                     products.map((product) => (
 
-                        <Grid style={{ backgroundColor: "yellow", width: "260px ", height: "220px", padding: "10px" }}>
+                        <Grid style={{ backgroundColor: "#ffe033", width: "260px ", height: "220px", padding: "10px" }}>
                             <Grid style={{ width: "100%" }} >
                                 <div style={{ width: "50px", height: "30px", borderRadius: "50%", backgroundColor: "white", margin: "auto" }}>
                                     {product.icon}
