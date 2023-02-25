@@ -36,7 +36,7 @@ export const useStyles = makeStyles({
      }
   },
   yellowCart:{
-    backgroundColor:'yellow',
+    backgroundColor:'#ffe033',
     width:"200px",
     height:"80px",
     margin:"10px",
