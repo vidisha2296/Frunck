@@ -88,43 +88,6 @@ const Header = () => {
                                 <MenuItem onClick={handleClose2}>Home Interior 3</MenuItem>
                                 <MenuItem onClick={handleClose2}>Home Interior 4</MenuItem>
                             </Menu> */}
-
-                            <p>
-                                Partner with us
-                            </p>
-                            <p>
-                                Login/Register
-                            </p>
-
-
-                                <p onMouseOver={handleMouseOver}>
-                                    Design Ideas
-                                </p>
-                                <Menu
-                                    // className={classes.dropdown}
-                                    anchorEl={anchorEl}
-                                    keepMounted
-                                    open={Boolean(anchorEl)}
-                                    onClose={handleClose}>
-                                    <MenuItem onClick={handleClose}>Futuristic living room</MenuItem>
-                                    <MenuItem onClick={handleClose}>Elegant Kitchen Designs</MenuItem>
-                                    <MenuItem onClick={handleClose}>Luxurious Bedroom Interiors</MenuItem>
-                                    <MenuItem onClick={handleClose}>Kids Bedroom Design</MenuItem>
-                                    <MenuItem onClick={handleClose}>Space Saving Designs</MenuItem>
-                                    <MenuItem onClick={handleClose}>Bathroom Designs</MenuItem>
-                                </Menu>
-                                <p onMouseOver={handleMouseOver2}>
-                                    Home Interior
-                                </p>
-                                <p onMouseOver={handleMouseOver2}>
-                                    Home Interior 2
-                                </p>
-                                <p onMouseOver={handleMouseOver2}>
-                                    Home Interior 3
-                                </p>
-                                <p onMouseOver={handleMouseOver2}>
-                                    Home Interior 4
-                                </p>
                             </div>
                         </div>
 
