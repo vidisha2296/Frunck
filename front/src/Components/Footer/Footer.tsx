@@ -1,7 +1,9 @@
 import { Box, Container, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
 import React from 'react';
+import { useStyles } from './Styles';
 
 const Footer = () => {
+    const classes=useStyles();
     return (
         <Grid item xs={12}>
             <Box
@@ -9,16 +11,21 @@ const Footer = () => {
                     width: "100%",
                     height: "auto",
                     backgroundColor: "black",
-                    paddingTop: "1rem",
-                    paddingBottom: "1rem",
+                    paddingTop: "15px",
+                    paddingBottom: "15px",
                     color:"white",
                 }}
             >
                 <Container maxWidth="lg">
-                    <Grid  container item xs={12} >
-                        <Grid item xs={2}>
+                    <Grid  container item xs={12}  className={classes.root}>
+                        <Grid item xs={2} style={{minWidth:"200px"}}>
                            <List>
                             <ListItem>
+                                <ListItemText style={{fontWeight:"600"}}>
+                                Corporate
+                                </ListItemText>   
+                            </ListItem>
+                            <ListItem>
                                 <ListItemText>
                                 About Furnko
                                 </ListItemText>   
@@ -56,7 +63,7 @@ const Footer = () => {
 
                            </List>
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={2} style={{minWidth:"200px"}}>
                         <List>
                             <ListItem>
                                 <ListItemText>
@@ -96,7 +103,7 @@ const Footer = () => {
 
                            </List>
                         </Grid>
-                        <Grid item xs={3}>
+                        <Grid item xs={3} style={{minWidth:"200px"}}>
                         <List>
                             <ListItem>
                                 <ListItemText>
@@ -136,7 +143,7 @@ const Footer = () => {
 
                            </List>
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={2} style={{minWidth:"200px"}}>
                         <List>
                             <ListItem>
                                 <ListItemText>
@@ -176,7 +183,7 @@ const Footer = () => {
 
                            </List>
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={2} style={{minWidth:"200px"}}>
                         <List>
                             <ListItem>
                                 <ListItemText>

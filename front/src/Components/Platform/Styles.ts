@@ -9,6 +9,10 @@ export const useStyles = makeStyles({
         marginTop: "20px",
         marginBottom: "20px",
         padding: "20px",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            height:"auto",
+            width: "100%" ,
+            }
     },
 
     boxDiv: {

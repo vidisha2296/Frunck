@@ -10,7 +10,10 @@ export const useStyles = makeStyles({
         marginTop: "20px",
         marginBottom: "20px",
 
-
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            height:"auto",
+            width: "100%" ,
+            }
     },
     box: {
         border: "1px solid gray",
@@ -18,6 +21,10 @@ export const useStyles = makeStyles({
         width: "100%",
         backgroundColor: "gray",
         margin: "20px",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            height:"auto",
+            width: "100%" ,
+            }
     }
 
 

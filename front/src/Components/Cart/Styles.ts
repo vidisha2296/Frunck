@@ -7,7 +7,14 @@ export const useStyles = makeStyles({
    
     display:"flex",
     justifyContent:"space-between",
-    marginLeft:"150px"
+    marginLeft:"150px",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      display:"flex",
+      flexDirection:"column",
+      margin:"auto",
+      height:"auto",
+      width: "100%" ,
+      }
   },
  
   smallBox:{
@@ -19,8 +26,14 @@ export const useStyles = makeStyles({
     
   },
   mainCart:{
-    backgroundColor: "white", height: "100px", width: "100%" ,
+    backgroundColor: "white",
+     height: "100px", 
+     width: "100%" ,
     margin:"30px",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+     height:"auto",
+     width: "100%" ,
+     }
   },
   yellowCart:{
     backgroundColor:'yellow',

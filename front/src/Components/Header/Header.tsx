@@ -28,67 +28,59 @@ const Header = () => {
     };
     return (
         <Grid className={classes.header}>
-            {/* <Box className={classes.upDiv}>
-                <Grid className={classes.signPart}>
-                    <p>Partner with us</p>
-                    <p>Login/Register</p>
-                </Grid>
-
-            </Box> */}
-            <Box>
-                <Grid container spacing={2} item xs={12}>
-                    <Grid item xs={2} >
+                <Grid container  item xs={12}>
+                    <Grid item xs={1} >
                         <IconButton>
                             Frunk
                         </IconButton>
                     </Grid>
-                    <Grid item xs={10} style={{ display: "flex", justifyContent: "flex-end" }}>
-                        <div className={classes.menuPart}>
-                            <p>
-                                Home
-                            </p>
+                    <Grid item xs={11} >
+                        <Box className={classes.upDiv}>
+                            <Grid className={classes.signPart}>
+                                <p>Partner with us</p>
+                                <p>Login/Register</p>
+                            </Grid>
 
-                            <p onMouseOver={handleMouseOver}>
-                                Design Ideas
-                            </p>
-                            <Menu
-                                // className={classes.dropdown}
-                                anchorEl={anchorEl}
-                                keepMounted
-                                open={Boolean(anchorEl)}
-                                onClose={handleClose}>
-                                <MenuItem onClick={handleClose}>Futuristic living room</MenuItem>
-                                <MenuItem onClick={handleClose}>Elegant Kitchen Designs</MenuItem>
-                                <MenuItem onClick={handleClose}>Luxurious Bedroom Interiors</MenuItem>
-                                <MenuItem onClick={handleClose}>Kids Bedroom Design</MenuItem>
-                                <MenuItem onClick={handleClose}>Space Saving Designs</MenuItem>
-                                <MenuItem onClick={handleClose}>Bathroom Designs</MenuItem>
-                            </Menu>
-                            <p onMouseOver={handleMouseOver2}>
-                                Home Interior
-                            </p>
-                            <Menu
-                                // className={classes.dropdown}
-                                anchorEl={anchorE2}
-                                keepMounted
-                                open={Boolean(anchorE2)}
-                                onClose={handleClose2}
-                            >
-                                <MenuItem onClick={handleClose2}>Home Interior 2</MenuItem>
-                                <MenuItem onClick={handleClose2}>Home Interior 3</MenuItem>
-                                <MenuItem onClick={handleClose2}>Home Interior 4</MenuItem>
-                            </Menu>
-                            <p>
-                                Partner with us
-                            </p>
-                            <p>
-                                Login/Register
-                            </p>
+                        </Box>
+                        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                            <div className={classes.menuPart}>
+                                <p>
+                                    Home
+                                </p>
 
+                                <p onMouseOver={handleMouseOver}>
+                                    Design Ideas
+                                </p>
+                                <Menu
+                                    // className={classes.dropdown}
+                                    anchorEl={anchorEl}
+                                    keepMounted
+                                    open={Boolean(anchorEl)}
+                                    onClose={handleClose}>
+                                    <MenuItem onClick={handleClose}>Futuristic living room</MenuItem>
+                                    <MenuItem onClick={handleClose}>Elegant Kitchen Designs</MenuItem>
+                                    <MenuItem onClick={handleClose}>Luxurious Bedroom Interiors</MenuItem>
+                                    <MenuItem onClick={handleClose}>Kids Bedroom Design</MenuItem>
+                                    <MenuItem onClick={handleClose}>Space Saving Designs</MenuItem>
+                                    <MenuItem onClick={handleClose}>Bathroom Designs</MenuItem>
+                                </Menu>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Home Interior
+                                </p>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Home Interior 2
+                                </p>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Home Interior 3
+                                </p>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Home Interior 4
+                                </p>
+                            </div>
                         </div>
+
                     </Grid>
                 </Grid>
-            </Box>
         </Grid>
     );
 };

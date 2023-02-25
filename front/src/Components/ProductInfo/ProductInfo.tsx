@@ -10,7 +10,7 @@ const ProductInfo = () => {
 
                 Clickable
             </Grid>
-            <Grid>
+            {/* <Grid>
                 <div className={classes.stickyIcon}>
                     <a href="https://www.instagram.com/?hl=en" className={classes.Whatsapp}><i className="fab fa-whatsapp"></i>  </a>
                     <a href="https://www.instagram.com/?hl=en" className={classes.Instagram}><i className="fab fa-instagram"></i>  </a>
@@ -19,7 +19,7 @@ const ProductInfo = () => {
                     <a href="https://www.youtube.com/" className={classes.Youtube}><i className="fab fa-youtube"></i> </a>
                     <a href="https://twitter.com/login" className={classes.Twitter}><i className="fab fa-twitter"> </i> </a>
                 </div>
-            </Grid>
+            </Grid> */}
         </Grid>
     );
 };

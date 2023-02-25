@@ -13,7 +13,11 @@ export const useStyles = makeStyles({
         display: "grid",
         gridTemplateColumns: "repeat( 3, 1fr)",
         margin: "auto",
-
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            display: "grid",
+            gridTemplateColumns: "repeat( 1, 1fr)",
+          
+           }
 
     },
     cart: {

@@ -7,26 +7,36 @@ export const useStyles = makeStyles({
   menuPart:{
     // width:"400px",
     display:"flex",
-    justifyContent:"center",
+   flexDirection:"row",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      flexDirection:"column",
+      marginTop:"30px",
+     }
   },
   displayBox:{
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-    width:"750px",
+    maxWidth:"750px",
     height:"300px",
     // backgroundColor:"#a7a0a0",
     margin:"20px"
     
   },
   displayImg:{
-    width:"500px",
+    maxWidth:"500px",
     height:"300px",
   },
   bigBox:{
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-    width:"200px",
+    minWidth:"200px",
+    maxWidth:"100%",
     height:"115px",
     backgroundColor:"#a7a0a0",
-    margin:"20px"
+    margin:"20px",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      width:"100%",
+      minWidth:"240px",
+      marginLeft:"30px",
+     },
     
   },
   smallBox:{
@@ -34,7 +44,12 @@ export const useStyles = makeStyles({
     width:"100px",
     height:"115px",
     backgroundColor:"#a7a0a0",
-    margin:"20px"
+    margin:"20px",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      width:"100%",
+      minWidth:"240px",
+      marginLeft:"30px",
+     },
     
   }
 
