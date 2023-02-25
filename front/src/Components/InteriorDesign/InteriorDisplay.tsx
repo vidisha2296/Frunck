@@ -60,7 +60,7 @@ const InteriorDisplay = () => {
                             <div className={classes.TextCart}>
                                 <div>{product.title}</div>
                                 <div style={{ paddingLeft: "15px" }} onMouseOver={handleMouseOver}>{product.icon}</div>
-                                <Menu
+                                {/* <Menu
                                 // className={classes.dropdown}
                                 anchorEl={anchorEl}
                                 keepMounted
@@ -72,7 +72,7 @@ const InteriorDisplay = () => {
                                 <MenuItem onClick={handleClose}>Kids Bedroom Design</MenuItem>
                                 <MenuItem onClick={handleClose}>Space Saving Designs</MenuItem>
                                 <MenuItem onClick={handleClose}>Bathroom Designs</MenuItem>
-                            </Menu>
+                            </Menu> */}
                             </div>
                             <div>
                                 <img src={product.image} alt="" style={{ width: "370px", height: "230px", }} />
@@ -81,12 +81,12 @@ const InteriorDisplay = () => {
                     ))
                 }
             </Grid>
-            <Grid style={{width:"100%",height: "60px"}}>
-                <Box style={{ display: "flex", justifyContent: "center", backgroundColor:"black", color:"white", borderRadius:"20px", margin:"auto", width:"35%" }}>
+            <Grid style={{ width: "100%", height: "60px" }}>
+                <Box style={{ display: "flex", justifyContent: "center", backgroundColor: "black", color: "white", borderRadius: "20px", margin: "auto", width: "35%" }}>
                     <div>
                         Explore 100’s of possibilities! schedule a call back
                     </div>
-                    <div style={{paddingLeft:"25px"}}>
+                    <div style={{ paddingLeft: "25px" }}>
                         <KeyboardDoubleArrowRightIcon />
                     </div>
                 </Box>
