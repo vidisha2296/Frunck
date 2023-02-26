@@ -69,13 +69,13 @@ const Header = () => {
                                 Home Interior
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Furniture & Sofa
+                               Sofa & Furniture 
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Renovation
+                              Custom Furniture
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Interior 4
+                               Home Renovate
                             </p>
                             {/* <Menu
                                 // className={classes.dropdown}
