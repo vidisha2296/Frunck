@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useStyles } from './Styles';
 import { Grid, Menu, MenuItem } from '@mui/material';
 import { Grid3x3Rounded } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
                         <Box className={classes.upDiv}>
                             <Grid className={classes.signPart}>
                                 <p>Partner with us</p>
-                                <p>Login/Register</p>
+                                <Link to="/signUp"><p>Login/Register</p></Link>
                             </Grid>
 
 
@@ -69,13 +70,13 @@ const Header = () => {
                                 Home Interior
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Interior 2
+                              Sofa & Furniture
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Interior 3
+                              Custom Furniture
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Interior 4
+                               Home Renovate
                             </p>
                             {/* <Menu
                                 // className={classes.dropdown}

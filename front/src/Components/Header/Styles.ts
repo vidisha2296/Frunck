@@ -16,7 +16,7 @@ export const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
     "& p": {
-      fontSize: "12px",
+      fontSize: "14px",
     },
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       display: "flex",
@@ -43,7 +43,7 @@ export const useStyles = makeStyles({
     width: "100%",
     backgroundColor: "white",
     color: "#a7a0a0",
-    marginTop: "20px",
+    // marginTop: "20px",
     // paddingLeft:"30px",
     // paddingRight:"30px",
     // border:"1px solid #a7a0a0",

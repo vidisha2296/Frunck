@@ -11,13 +11,13 @@ export const useStyles = makeStyles({
 
   CartBox: {
     backgroundColor: "#d9d9d9",
-    height: "110px",
+    height: "100px",
     width: "100%",
     marginTop: "20px",
     marginBottom: "20px",
     "& p": {
       margin: "auto",
-      width:"100px",
+      width:"110px",
       marginTop:"30px",
     },
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key

@@ -6,6 +6,7 @@ import { Routes, Route ,BrowserRouter} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Cart from './Components/Cart/Cart';
+import SignUp from './Components/SignUp/SignUp';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart/>} />
+          <Route path="/signUp" element={<SignUp/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
