@@ -24,7 +24,11 @@ export const useStyles = makeStyles({
         width: "380px",
         height: "300px",
         boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-        margin: "10px"
+        margin: "10px",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: "280px",
+          
+           }
     },
 
     smallBox: {
@@ -55,6 +59,32 @@ export const useStyles = makeStyles({
         textAlign: "left",
         fontWeight: "600",
         margin: "0px"
+    },
+    explore:{
+        display: "flex", justifyContent: "center",
+         backgroundColor: "black",
+          color: "white",
+           borderRadius: "20px",
+            margin: "auto",
+             width: "35%",
+             ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+                width:"84%",
+                fontSize:"10px",
+                marginLeft:"20px",
+                backgroundColor: "black",
+                color:"white"
+              
+               }    
+    },
+    productImg:{
+        width: "370px",
+         height: "230px",
+         margin:"auto",
+         ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width:"260px",
+            margin:"auto",
+          
+           }   
     }
 
 

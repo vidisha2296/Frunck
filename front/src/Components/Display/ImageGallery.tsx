@@ -20,19 +20,19 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    // label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath:furniture1,
   },
   {
-    label: 'Bird',
+    // label: 'Bird',
     imgPath:furniture2,
   },
   {
-    label: 'Bali, Indonesia',
+    // label: 'Bali, Indonesia',
     imgPath:furniture3,
   },
   {
-    label: 'Goč, Serbia',
+    // label: 'Goč, Serbia',
     imgPath: furniture4,
   },
 ];
@@ -56,7 +56,7 @@ const ImageGallery=()=> {
 
   return (
     <Box sx={{ maxWidth: 750, flexGrow: 1 }}>
-      <Paper
+      {/* <Paper
         square
         elevation={0}
         sx={{
@@ -67,8 +67,8 @@ const ImageGallery=()=> {
           bgcolor: 'background.default',
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper>
+         <Typography>{images[activeStep].label}</Typography> 
+      </Paper> */}
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -76,7 +76,7 @@ const ImageGallery=()=> {
         enableMouseEvents
       >
         {images.map((step, index) => (
-          <div key={step.label}>
+          <div >
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
@@ -88,7 +88,8 @@ const ImageGallery=()=> {
                   width: '100%',
                 }}
                 src={step.imgPath}
-                alt={step.label}
+                // alt={step.label}
+                alt=""
               />
             ) : null}
           </div>

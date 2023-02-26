@@ -6,9 +6,8 @@ const ProductInfo = () => {
     const classes = useStyles();
     return (
         <Grid container item xs={12} >
-            <Grid className={classes.mainCart}>
-
-                Clickable
+            <Grid className={classes.CartBox}>
+                <p>Product info (Clickable)</p>
             </Grid>
             {/* <Grid>
                 <div className={classes.stickyIcon}>

@@ -7,24 +7,22 @@ import ImageGallery from './ImageGallery';
 const Display = () => {
     const classes = useStyles()
     return (
-        <Grid>
-            <Grid container spacing={2} item xs={12} className={classes.menuPart}>
-                    <Box className={classes.displayBox}>
-                        {/* <img src={furniture8} alt=""  className={classes.displayImg} /> */}
-                        <ImageGallery/>
-                    </Box>
-                    <Box>
-                    <Box className={classes.menuPart}>
-                        <Box className={classes.bigBox}></Box>
-                        <Box className={classes.smallBox}></Box>
-                    </Box>
-                    <Box className={classes.menuPart}>
-                    <Box className={classes.smallBox}></Box>
-                        <Box className={classes.bigBox}></Box>
-                    </Box>
-                    </Box>
-                
-            </Grid>
+        <Grid container item xs={12} className={classes.menuPart}>
+            <Box className={classes.displayBox}>
+                {/* <img src={furniture8} alt=""  className={classes.displayImg} /> */}
+                <ImageGallery />
+            </Box>
+            <Box>
+                <Box className={classes.boxContain}>
+                    <Box className={classes.bigBox}><p>Product info (Clickable)</p></Box>
+                    <Box className={classes.smallBox}><p>Product info (Clickable)</p></Box>
+                </Box>
+                <Box className={classes.boxContain}>
+                    <Box className={classes.smallBox}><p>Product info (Clickable)</p></Box>
+                    <Box className={classes.bigBox}><p>Product info (Clickable)</p></Box>
+                </Box>
+            </Box>
+
         </Grid>
     );
 };

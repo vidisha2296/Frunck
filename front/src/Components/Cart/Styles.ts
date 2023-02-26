@@ -31,8 +31,9 @@ export const useStyles = makeStyles({
      width: "100%" ,
     margin:"30px",
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      margin:"auto",
+     width: "90%" ,
      height:"auto",
-     width: "100%" ,
      }
   },
   yellowCart:{
@@ -43,6 +44,10 @@ export const useStyles = makeStyles({
     padding:"10px",
     display:"flex",
     justifyContent:"space-between",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+     width: "250px" ,
+     margin:"10px",
+     }
   },
   pText:{
     fontSize:"12px",
