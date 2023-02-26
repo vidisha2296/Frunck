@@ -16,6 +16,50 @@ export const useStyles = makeStyles({
       width: "100%" ,
       }
   },
+  "Facebook": {
+    backgroundColor: "yellow",
+    color: "black",
+    fontSize:"30px",
+    width:"50px",
+    paddingLeft:"10px",
+  },
+
+  "Youtube": {
+    backgroundColor: "yellow",
+    color: "black",
+    fontSize:"30px",
+    width:"50px",
+    paddingLeft:"10px",
+  },
+  "Twitter": {
+    backgroundColor: "yellow",
+    color: "black",
+    fontSize:"30px",
+    width:"50px",
+    paddingLeft:"10px",
+  },
+  "Whatsapp": {
+    backgroundColor: "yellow",
+    color: "black",
+    fontSize:"30px",
+    width:"50px",
+    paddingLeft:"10px",
+  },
+  "Instagram": {
+    backgroundColor: "yellow",
+    color: "black",
+    fontSize:"30px",
+    width:"50px",
+    paddingLeft:"10px",
+  },
+
+  "Google": {
+    backgroundColor: "yellow",
+    color: "black",
+    fontSize:"30px",
+    width:"50px",
+    paddingLeft:"10px",
+  },
   
 
 

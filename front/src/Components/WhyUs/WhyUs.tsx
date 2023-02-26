@@ -42,14 +42,14 @@ const WhyUs = () => {
                 {
                     products.map((product) => (
 
-                        <Grid style={{ backgroundColor: "#ffe033", width: "260px ", height: "220px", padding: "10px" }}>
+                        <Grid className={classes.whyCart}>
                             <Grid style={{ width: "100%" }} >
                                 <div className={classes.productIcon}>
                                     {product.icon}
                                 </div>
                             </Grid>
                             <Box>
-                                <h4>{product.title}</h4>
+                                <h4 className={classes.proTitle}>{product.title}</h4>
                                 <p className={classes.productDetails}>{product.details}</p>
                             </Box>
                         </Grid>

@@ -8,6 +8,7 @@ export const useStyles = makeStyles({
     display:"flex",
     justifyContent:"space-between",
     marginLeft:"150px",
+    width:" 73%",
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       display:"flex",
       flexDirection:"column",

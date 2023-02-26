@@ -16,7 +16,7 @@ export const useStyles = makeStyles({
   letterBorder: {
     border: "1px solid gray",
     borderRadius: "20px",
-    height: "80px",
+    height: "95px",
     width: "80%",
     margin: "auto", padding: "6px",
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
