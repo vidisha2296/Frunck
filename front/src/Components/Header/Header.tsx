@@ -71,6 +71,7 @@ const Header = () => {
                             </p>
                             <p onMouseOver={handleMouseOver2}>
                               Sofa & Furniture
+
                             </p>
                             <p onMouseOver={handleMouseOver2}>
                               Custom Furniture
