@@ -43,7 +43,7 @@ const Header = () => {
 
 
                         </Box>
-                        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                        <div className={classes.headLast}>
                             <div className={classes.menuPart}>
                                 <p>
                                     Home

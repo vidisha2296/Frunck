@@ -11,7 +11,7 @@ export const useStyles = makeStyles({
 
   CartBox: {
     backgroundColor: "#d9d9d9",
-    height: "100px",
+    height: "110px",
     width: "100%",
     marginTop: "20px",
     marginBottom: "20px",

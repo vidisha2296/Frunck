@@ -2,7 +2,9 @@ import { makeStyles } from '@mui/styles';
 
 
 export const useStyles = makeStyles({
-
+    whyCart: {
+        backgroundColor: "#ffe033", width: "260px ", height: "180px", padding: "10px"
+    },
     why: {
 
         backgroundColor: "black",
@@ -33,11 +35,13 @@ export const useStyles = makeStyles({
         backgroundColor: "white",
         margin: "auto"
     },
-    productDetails:{
-        textAlign:"justify",
+    productDetails: {
+        textAlign: "center",
+        fontSize: "13px"
+
     },
-    proTitle:{
-fontSize:"12px"
+    proTitle: {
+        fontSize: "17px"
     }
 
 

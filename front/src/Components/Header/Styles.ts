@@ -20,12 +20,23 @@ export const useStyles = makeStyles({
     },
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       display: "flex",
-      flexDirection: "column !important",
+      flexDirection: "row !important",
+      position: "absolute",
+      marginTop: "19px",
+      width: "170px",
       "& p": {
-        fontSize: "10px",
+        fontSize: "12px",
       },
 
     }
+  },
+  headLast: {
+    display: "flex", justifyContent: "flex-end",
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      float: "left",
+      marginTop: "10px"
+    }
+
   },
   header: {
     height: "80px",

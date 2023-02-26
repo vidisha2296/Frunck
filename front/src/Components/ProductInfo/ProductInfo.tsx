@@ -7,7 +7,7 @@ const ProductInfo = () => {
     return (
         <Grid container item xs={12} >
             <Grid className={classes.CartBox}>
-                <p>Product info (Clickable)</p>
+                <p>Product info ()</p>
             </Grid>
             {/* <Grid>
                 <div className={classes.stickyIcon}>
