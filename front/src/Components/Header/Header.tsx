@@ -5,12 +5,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Drawer from '@mui/material/Drawer';
 import { useStyles } from './Styles';
 import { Grid, Menu, MenuItem } from '@mui/material';
 import { Grid3x3Rounded } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
 
+const drawerWidth = 200;
 const Header = () => {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -27,9 +29,19 @@ const Header = () => {
     const handleClose2 = () => {
         setAnchorE2(null);
     };
+    const [open, setOpen] = React.useState(false);
+
+    const handleDrawerOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleDrawerClose = () => {
+      setOpen(false);
+    };
     return (
         <Grid className={classes.header}>
-                <Grid container  item xs={12}>
+            {/* <AppBar style={{backgroundColor:"white", color:"gray"}}> */}
+                <Grid container item xs={12}>
                     <Grid item xs={1} >
                         <IconButton>
                             Frunk
@@ -41,45 +53,44 @@ const Header = () => {
                                 <p>Partner with us</p>
                                 <Link to="/signUp"><p>Login/Register</p></Link>
                             </Grid>
-
-
                         </Box>
                         <div className={classes.headLast}>
                             <div className={classes.menuPart}>
-                                <p>
-                                    Home
+                                <Link to="/">
+                                    <p>
+                                        Home
+                                    </p>
+                                </Link>
+                                <p onMouseOver={handleMouseOver}>
+                                    Design Ideas
                                 </p>
+                                <Menu
+                                    // className={classes.dropdown}
+                                    anchorEl={anchorEl}
+                                    keepMounted
+                                    open={Boolean(anchorEl)}
+                                    onClose={handleClose}>
+                                    <MenuItem onClick={handleClose}>Futuristic living room</MenuItem>
+                                    <MenuItem onClick={handleClose}>Elegant Kitchen Designs</MenuItem>
+                                    <MenuItem onClick={handleClose}>Luxurious Bedroom Interiors</MenuItem>
+                                    <MenuItem onClick={handleClose}>Kids Bedroom Design</MenuItem>
+                                    <MenuItem onClick={handleClose}>Space Saving Designs</MenuItem>
+                                    <MenuItem onClick={handleClose}>Bathroom Designs</MenuItem>
+                                </Menu>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Home Interior
+                                </p>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Sofa & Furniture
 
-                            <p onMouseOver={handleMouseOver}>
-                                Design Ideas
-                            </p>
-                            <Menu
-                                // className={classes.dropdown}
-                                anchorEl={anchorEl}
-                                keepMounted
-                                open={Boolean(anchorEl)}
-                                onClose={handleClose}>
-                                <MenuItem onClick={handleClose}>Futuristic living room</MenuItem>
-                                <MenuItem onClick={handleClose}>Elegant Kitchen Designs</MenuItem>
-                                <MenuItem onClick={handleClose}>Luxurious Bedroom Interiors</MenuItem>
-                                <MenuItem onClick={handleClose}>Kids Bedroom Design</MenuItem>
-                                <MenuItem onClick={handleClose}>Space Saving Designs</MenuItem>
-                                <MenuItem onClick={handleClose}>Bathroom Designs</MenuItem>
-                            </Menu>
-                            <p onMouseOver={handleMouseOver2}>
-                                Home Interior
-                            </p>
-                            <p onMouseOver={handleMouseOver2}>
-                              Sofa & Furniture
-
-                            </p>
-                            <p onMouseOver={handleMouseOver2}>
-                              Custom Furniture
-                            </p>
-                            <p onMouseOver={handleMouseOver2}>
-                               Home Renovate
-                            </p>
-                            {/* <Menu
+                                </p>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Custom Furniture
+                                </p>
+                                <p onMouseOver={handleMouseOver2}>
+                                    Home Renovate
+                                </p>
+                                {/* <Menu
                                 // className={classes.dropdown}
                                 anchorEl={anchorE2}
                                 keepMounted
@@ -95,6 +106,13 @@ const Header = () => {
 
                     </Grid>
                 </Grid>
+            {/* </AppBar> */}
+            {/* <Drawer
+                onClick={handleDrawerOpen}
+                >
+                <MenuItem>Menu Item</MenuItem>
+                <MenuItem>Menu Item 2</MenuItem>
+            </Drawer> */}
         </Grid>
     );
 };

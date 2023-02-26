@@ -60,7 +60,15 @@ export const useStyles = makeStyles({
     width:"50px",
     paddingLeft:"10px",
   },
-  
+  socialImg:{
+    display:"flex !important",
+     justifyContent:"space-between !important",
+     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      display:"flex",
+      flexDirection:"column",
+      
+      }
+  }
 
 
 });

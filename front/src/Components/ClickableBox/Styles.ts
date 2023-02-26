@@ -17,18 +17,18 @@ export const useStyles = makeStyles({
     },
     boxContainer: {
         display: "flex",
-        justifyContent:"space-between",
+        // justifyContent:"space-between",
         flexDirection: "row",
         ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "column !important",
             width:"100%",
         }
     },
     box: {
         // border: "1px solid gray",
         height: "100px",
-        minWidth: "550px",
+        width: "570px",
         margin:"30px",
         borderRadius:"6px",
         backgroundColor: "#f0f2f4",
@@ -40,7 +40,7 @@ export const useStyles = makeStyles({
           },
         ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
             height: "100px",
-            width: "250px",
+            width: "250px !important",
             // padding:"40px",
             "& p": {
                 width:"150px",

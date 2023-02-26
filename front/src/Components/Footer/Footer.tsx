@@ -6,7 +6,7 @@ import social from "../../Assets/Images/social.png";
 const Footer = () => {
     const classes = useStyles();
     return (
-        <Grid item xs={12}>
+        <Grid container item xs={12}>
             <Box
                 sx={{
                     width: "100%",
@@ -17,9 +17,9 @@ const Footer = () => {
                     color: "white",
                 }}
             >
-                <Container maxWidth="lg">
+               
                     <Grid container item xs={12} className={classes.root}>
-                        <Grid item xs={2} style={{ minWidth: "200px" }}>
+                        <Grid item xs={2} style={{ minWidth: "100px" }}>
                             <List>
                                 <ListItem>
                                     <ListItemText style={{ fontWeight: "600" }}>
@@ -64,7 +64,7 @@ const Footer = () => {
 
                             </List>
                         </Grid>
-                        <Grid item xs={2} style={{ minWidth: "200px" }}>
+                        <Grid item xs={2} style={{ minWidth: "100px" }}>
                             <List>
                                 <ListItem>Useful links</ListItem>
                                 <ListItem>
@@ -105,7 +105,7 @@ const Footer = () => {
 
                             </List>
                         </Grid>
-                        <Grid item xs={3} style={{ minWidth: "200px" }}>
+                        <Grid item xs={2} style={{ minWidth: "100px" }}>
                             <List>
                                 <ListItem>Customer Support</ListItem>
                                 <ListItem>Contact/Help</ListItem>
@@ -116,45 +116,34 @@ const Footer = () => {
                                 </ListItem>
                             </List>
                         </Grid>
-                        <Grid item xs={2} style={{ minWidth: "200px" }}>
+                        <Grid item xs={4} style={{width: "150px" }}>
                             <List>
                                 <ListItem>Social</ListItem>
-                                <ListItem>
+                                <ListItem className={classes.socialImg}>
                                     <a href="https://www.instagram.com/?hl=en" className={classes.Whatsapp}><i className="fab fa-whatsapp"></i>  </a>
-                                </ListItem>
-                                <ListItem>
                                     <a href="https://www.instagram.com/?hl=en" className={classes.Instagram}><i className="fab fa-instagram"></i>  </a>
-
-                                </ListItem>
-                                <ListItem>
                                     <a href="https://www.facebook.com/" className={classes.Facebook}><i className="fab fa-facebook-f"> </i> </a>
-
+                                    
                                 </ListItem>
-                                <ListItem>
-                                    <a href="https://aboutme.google.com/u/0/?referer=gplus" className={classes.Google}><i className="fab fa-google-plus-g"> </i>  </a>
-
-                                </ListItem>
-                                <ListItem>
+                                <ListItem className={classes.socialImg}>
+                                <a href="https://aboutme.google.com/u/0/?referer=gplus" className={classes.Google}><i className="fab fa-google-plus-g"> </i>  </a>
                                     <a href="https://www.youtube.com/" className={classes.Youtube}><i className="fab fa-youtube"></i> </a>
-
-                                </ListItem>
-                                <ListItem>
                                     <a href="https://twitter.com/login" className={classes.Twitter}><i className="fab fa-twitter"> </i> </a>
                                 </ListItem>
-
+                               
                             </List>
                         </Grid>
-                        <Grid item xs={2} style={{ minWidth: "200px" }}>
+                        <Grid item xs={2} style={{ minWidth: "100px" }}>
                             <List>
                                 <ListItem>Address</ListItem>
                                 <ListItem>
                                     <ListItemText>
-                                       Call:9000080000
+                                        Call:9000080000
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem>
                                     <ListItemText>
-                                      Email:cs@furnko.in
+                                        Email:cs@furnko.in
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem>
@@ -165,7 +154,7 @@ const Footer = () => {
                             </List>
                         </Grid>
                     </Grid>
-                </Container>
+              
             </Box>
         </Grid>
     );
