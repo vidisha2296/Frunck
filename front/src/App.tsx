@@ -7,6 +7,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Cart from './Components/Cart/Cart';
 import SignUp from './Components/SignUp/SignUp';
+import SignIn from './Components/SignUp/SignIn';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart/>} />
           <Route path="/signUp" element={<SignUp/>} />
+          <Route path="/signIn" element={<SignIn/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
