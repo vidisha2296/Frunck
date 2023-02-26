@@ -5,7 +5,6 @@ import { useStyles } from './Styles';
 const About = () => {
     const classes = useStyles();
     return (
-        <Grid >
             <Grid container item xs={12} style={{ margin: "auto" }}>
                 <Grid item xs={12} >
                     <div className={classes.menuPart}>
@@ -54,8 +53,6 @@ const About = () => {
                     </Box>
                 </Grid> */}
             </Grid>
-
-        </Grid>
     );
 };
 

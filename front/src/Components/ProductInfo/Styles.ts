@@ -9,10 +9,24 @@ export const useStyles = makeStyles({
     marginLeft: "150px"
   },
 
-  mainCart: {
-    backgroundColor: "#a7a0a0", height: "100px", width: "100%",
+  CartBox: {
+    backgroundColor: "#d9d9d9",
+    height: "100px",
+    width: "100%",
     marginTop: "20px",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    "& p": {
+      margin: "auto",
+      width:"100px",
+      marginTop:"30px",
+    },
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      margin: "30px",
+      width: "100%",
+      //  width: "90%" ,
+      height: "100px",
+    }
+
   },
 
   pText: {

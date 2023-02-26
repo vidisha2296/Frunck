@@ -3,58 +3,77 @@ import { makeStyles } from '@mui/styles';
 
 
 export const useStyles = makeStyles({
-  
-  upDiv:{
-    display:"flex",
-    justifyContent:"flex-end",
-    paddingRight:"30px",
+
+  upDiv: {
+    display: "flex",
+    justifyContent: "flex-end",
+    paddingRight: "30px",
     height: "32px",
-    color:"#a7a0a0",
+    color: "#a7a0a0",
   },
-  signPart:{
-    width:"250px",
-    display:"flex",
-    justifyContent:"space-between"
+  signPart: {
+    width: "250px",
+    display: "flex",
+    justifyContent: "space-between",
+    "& p": {
+      fontSize: "12px",
+    },
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+      display: "flex",
+      flexDirection: "column !important",
+      "& p": {
+        fontSize: "10px",
+      },
+
+    }
   },
-  header:{
-    height:"80px",
-    width:"100%",
-    backgroundColor:"white",
-    color:"#a7a0a0",
-    marginTop:"20px",
+  header: {
+    height: "80px",
+    width: "100%",
+    backgroundColor: "white",
+    color: "#a7a0a0",
+    marginTop: "20px",
     // paddingLeft:"30px",
     // paddingRight:"30px",
     // border:"1px solid #a7a0a0",
     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-    position:"sticky",
+    position: "sticky",
     // "@media (max-width: 768px)": {
     //   paddingLeft: 0,
     // },
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-     backgroundColor:"white", 
-     width:"100%",
-     height:"auto",
-     color:"gray",
-     minWidth:"320px",
-    //  position:"absolute"
-     }
+      backgroundColor: "white",
+      width: "100%",
+      height: "auto",
+      color: "gray",
+      minWidth: "320px",
+      //  position:"absolute"
+    }
   },
-  innerHead:{
-    display:"flex",
-    justifyContent:"space-between"
+  innerHead: {
+    display: "flex",
+    justifyContent: "space-between"
   },
-  menuPart:{
+  menuPart: {
     // width:"400px",
-    display:"flex",
-    justifyContent:"space-between",
-    gap:"35px",
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "35px",
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-      flexDirection:"column",
-     backgroundColor:"white", 
-     color:"gray",
-     height:"auto",
-    //  position:"absolute"
-     }
+      flexDirection: "column",
+      backgroundColor: "white",
+      color: "gray",
+      height: "auto",
+      //  position:"absolute"
+      "& p": {
+        marginBottom: "0px",
+        gap: "0px",
+        fontSize: "10px"
+      }
+    },
+    "& p": {
+      margin: "0px"
+    },
   },
   // headerNew: {
   //   backgroundColor: "#400CCC",
@@ -144,10 +163,10 @@ export const useStyles = makeStyles({
   // Links: {
   //   padding: "0 20px",
   //   color: "#606C74",
-//      backgroundColor:"rgb(248, 248, 248)",
-//     "& :hover":{
-// backgroundColor:"#eceff1"
-//     }
+  //      backgroundColor:"rgb(248, 248, 248)",
+  //     "& :hover":{
+  // backgroundColor:"#eceff1"
+  //     }
 
   // },
   // list:{

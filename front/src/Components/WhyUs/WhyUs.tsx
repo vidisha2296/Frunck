@@ -4,7 +4,11 @@ import UpdateIcon from '@mui/icons-material/Update';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import { Grid, Box } from '@mui/material';
+import { useStyles } from './Styles';
+
 const WhyUs = () => {
+    const classes = useStyles();
+
     const products = [
         {
             icon: <DesignServicesOutlinedIcon />,
@@ -30,26 +34,23 @@ const WhyUs = () => {
     return (
         <Grid container item xs={12} >
             <Grid item xs={12}>
-                <div style={{
-                    backgroundColor: "black", width: "100px", color: "white", borderRadius: "20px", margin: "auto", fontSize: "25px",
-                    padding: " 0px 1px 5px 2px"
-                }}>
+                <div className={classes.why}>
                     why us
                 </div>
             </Grid>
-            <Grid style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "10px", margin: "auto", paddingTop: "30px" }}>
+            <Grid className={classes.DesignCon}>
                 {
                     products.map((product) => (
 
                         <Grid style={{ backgroundColor: "#ffe033", width: "260px ", height: "220px", padding: "10px" }}>
                             <Grid style={{ width: "100%" }} >
-                                <div style={{ width: "50px", height: "30px", borderRadius: "50%", backgroundColor: "white", margin: "auto" }}>
+                                <div className={classes.productIcon}>
                                     {product.icon}
                                 </div>
                             </Grid>
                             <Box>
                                 <h4>{product.title}</h4>
-                                <p style={{ textAlign: "justify", }}>{product.details}</p>
+                                <p className={classes.productDetails}>{product.details}</p>
                             </Box>
                         </Grid>
 

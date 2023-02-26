@@ -5,10 +5,10 @@ import { useStyles } from './Styles';
 const ClickableBox = () => {
     const classes=useStyles()
     return (
-        <Grid className={classes.root}>
-            <Grid container spacing={2} item xs={12} >
-                <Grid item xs={6} className={classes.box}></Grid>
-                <Grid item xs={6} className={classes.box}></Grid>
+        <Grid container item xs={12} style={{backgroundColor:"white"}}>
+            <Grid spacing={2} item xs={12} className={classes.boxContainer}>
+                <Grid  className={classes.box}>Display (Clickable)</Grid>
+                <Grid   className={classes.box}>Display (Clickable)</Grid>
             </Grid>
 
         </Grid>

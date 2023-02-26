@@ -38,12 +38,11 @@ const Platform = () => {
         },
     ]
     return (
-        <div>
             <Grid container item xs={12} className={classes.root}>
-                <Grid item xs={2}>
-                    <div style={{ fontSize: "40px", fontWeight: "600", textAlign:"center", marginTop:"105px" }}>360<span>&deg;</span></div>
+                <Grid className={classes.threeDiv}>
+                    360<span>&deg;</span>
                 </Grid>
-                <Grid item xs={10} >
+                <Grid>
                     <div style={{textAlign:"left", marginLeft:"20px"}}>
                     Complete one stop full range home interior solution under one mega platform
                     </div>
@@ -65,7 +64,6 @@ const Platform = () => {
 
                 </Grid>
             </Grid>
-        </div>
     );
 };
 

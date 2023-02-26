@@ -75,15 +75,15 @@ const InteriorDisplay = () => {
                             </Menu> */}
                             </div>
                             <div>
-                                <img src={product.image} alt="" style={{ width: "370px", height: "230px", }} />
+                                <img src={product.image} alt="" className={classes.productImg}/>
                             </div>
                         </Grid>
                     ))
                 }
             </Grid>
             <Grid style={{ width: "100%", height: "60px" }}>
-                <Box style={{ display: "flex", justifyContent: "center", backgroundColor: "black", color: "white", borderRadius: "20px", margin: "auto", width: "35%" }}>
-                    <div>
+                <Box className={classes.explore}>
+                    <div style={{margin:"auto"}}>
                         Explore 100’s of possibilities! schedule a call back
                     </div>
                     <div style={{ paddingLeft: "25px" }}>
