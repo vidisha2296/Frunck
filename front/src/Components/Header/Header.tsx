@@ -69,10 +69,10 @@ const Header = () => {
                                 Home Interior
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Interior 2
+                               Furniture & Sofa
                             </p>
                             <p onMouseOver={handleMouseOver2}>
-                               Home Interior 3
+                               Home Renovation
                             </p>
                             <p onMouseOver={handleMouseOver2}>
                                Home Interior 4
