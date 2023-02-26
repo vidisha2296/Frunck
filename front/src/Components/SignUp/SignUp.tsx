@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, TextField, Button } from '@mui/material';
 import { Grid } from '@mui/material';
 import { useStyles } from './Styles';
+import { Link } from 'react-router-dom';
 
 
 const SignUp = () => {
@@ -57,7 +58,7 @@ const SignUp = () => {
                     Sign Up
                 </Button>
                 <Grid >
-                    Already have an account? Sign in
+                    Already have an account? <Link to="/signIn">Sign in </Link>
                 </Grid>
             </form>
             </Grid>
