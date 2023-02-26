@@ -24,7 +24,8 @@ const Wonder = () => {
         color: "black",
         fontWeight: "600",
         paddingTop: "30px",
-        paddingBottom: "30px"
+        paddingBottom: "30px",
+       
       }}>
         Wondering How it works ?
       </Grid>
@@ -64,7 +65,7 @@ const Wonder = () => {
               padding:"0px !important"
             }
           }}>
-            <StepLabel style={{ color: "gray" }}>{label}</StepLabel>
+            <StepLabel className={classes.stepLabel}>{label}</StepLabel>
           </Step>
         ))}
       </Stepper>

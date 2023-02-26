@@ -35,10 +35,17 @@ export const useStyles = makeStyles({
     },
   
     steeper: {
-        width: " 80%",
-        margin: " auto",
+        width: "80% !important",
+        margin: "30px auto",
+
         ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-            width: '95%',
+            width: '95% !important',
+        }
+    },
+    stepLabel:{
+        color: "gray", fontSize:"12px",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: '8px !important',
         }
     }
 
