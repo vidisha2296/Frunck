@@ -1,12 +1,25 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { Typography, TextField, Button } from '@mui/material';
 import { Grid } from '@mui/material';
 import { useStyles } from './Styles';
 import { Link } from 'react-router-dom';
-
-
+import { useDispatch, useSelector } from "react-redux";
+import { login,register } from "../../services/apiCalls";
 const SignUp = () => {
     const classes = useStyles();
+    
+     //@ts-ignore
+    
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const dispatch = useDispatch();
+    //@ts-ignore
+    const { isFetching, error } = useSelector((state) => state.user);
+    const handleClick = (e:any) => {
+        e.preventDefault();
+        register(dispatch, { username,email, password });
+      };
     return (
         <div style={{margin:"auto", height:"auto"}}>
             <Typography component="h1" variant="h5" style={{marginTop:"30px"}}>
@@ -25,6 +38,7 @@ const SignUp = () => {
                             id="firstName"
                             label="User Name"
                             autoFocus
+                            onChange={(e) => setUsername(e.target.value)}
                         />
                     </Grid>
                     
@@ -37,6 +51,7 @@ const SignUp = () => {
                             label="Email Address"
                             name="email"
                             autoComplete="email"
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -49,12 +64,14 @@ const SignUp = () => {
                             type="password"
                             id="password"
                             autoComplete="current-password"
+                            onChange={(e) => setPassword(e.target.value)}
                         />
                     </Grid>
                 </Grid>
                 <Button
                     type="submit"
-                    className={classes.submit}>
+                    className={classes.submit}
+                    onClick={handleClick}>
                     Sign Up
                 </Button>
                 <Grid >
