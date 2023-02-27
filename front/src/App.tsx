@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import Cart from './Components/Cart/Cart';
 import SignUp from './Components/SignUp/SignUp';
 import SignIn from './Components/SignUp/SignIn';
+import Navbar from './Components/Header/Navbar';
 
 
 
@@ -16,7 +17,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Header/> 
+      {/* <Header/>  */}
+      <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart/>} />
