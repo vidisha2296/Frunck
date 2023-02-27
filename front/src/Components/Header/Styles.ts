@@ -213,5 +213,34 @@ export const useStyles = makeStyles({
   //   padding: "20px 30px",
   // },
 
+  navlinks: {
+    marginLeft: "5px",
+    display: "flex",
+  },
+  logo: {
+    flexGrow: "1",
+    cursor: "pointer",
+    textAlign:"left",
+    fontSize:"15px"
+  },
+  link: {
+    textDecoration: "none",
+    color: "white",
+    fontSize: "20px",
+    marginLeft: "20px",
+    "&:hover": {
+      color: "yellow",
+      borderBottom: "1px solid white",
+    },
+  },
+  // link: {
+	// 	textDecoration: "none",
+	// 	color: "blue",
+	// 	fontSize: "20px",
+	// },
+	icon: {
+		color: "white"
+	}
+
 
 });
