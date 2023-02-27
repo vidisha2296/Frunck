@@ -116,7 +116,7 @@ const Footer = () => {
                                 </ListItem>
                             </List>
                         </Grid>
-                        <Grid item xs={4} style={{width: "150px" }}>
+                        <Grid item xs={4} style={{maxWidth: "280px" }}>
                             <List>
                                 <ListItem>Social</ListItem>
                                 <ListItem className={classes.socialImg}>
