@@ -38,9 +38,9 @@ export const useStyles = makeStyles({
     marginRight: "20px",
     borderRadius: "5px",
     "& p": {
-      width:"100px",
+      width: "100px",
       textAlign: "center",
-      margin:" 30px 20px 25px 85px",
+      margin: " 30px 20px 25px 85px",
     },
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       // width: "100%",
@@ -58,19 +58,20 @@ export const useStyles = makeStyles({
     marginRight: "20px",
     borderRadius: "5px",
     "& p": {
-      width:"100px",
+      width: "100px",
       textAlign: "center",
       margin: "35px",
     },
 
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
       // width: "90%",
-      minWidth: "240px",
+      minWidth: "280px",
       marginLeft: "30px",
       marginBottom: "30px",
       "& p": {
+        width: "100px",
+        margin: " 30px 20px 25px 85px",
         textAlign: "center",
-        margin: "auto",
       },
 
     },

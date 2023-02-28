@@ -70,7 +70,7 @@ export const useStyles = makeStyles({
         ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
             width: "84%",
             fontSize: "10px",
-            marginLeft: "20px",
+            marginLeft: "27px",
             backgroundColor: "black",
             color: "white"
 
