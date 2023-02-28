@@ -40,12 +40,13 @@ export const useStyles = makeStyles({
           },
         ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
             height: "100px",
-            width: "250px !important",
+            width: "280px !important",
+            margin:"10px 10px 10px 30px",
             // padding:"40px",
             "& p": {
                 width:"150px",
                 textAlign: "center",
-                margin:"15px auto",
+                margin:"35px auto",
               },
         }
     }

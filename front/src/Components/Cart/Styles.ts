@@ -46,8 +46,8 @@ export const useStyles = makeStyles({
     display:"flex",
     justifyContent:"space-between",
     ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
-     width: "250px" ,
-     margin:"10px",
+      width:" 280px",
+      margin: "10px 10px 10px 25px",
      }
   },
   pText:{
