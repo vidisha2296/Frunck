@@ -19,11 +19,21 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '95%',
+    height:"auto",
     bgcolor: '#FFD300',
     backgroundImage: "linear-gradient(to left, #ffffb3 , yellow)",
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
+    ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+        width: '90%',
+        height:"auto",
+        margin:"auto",
+        maxWidth: '100vw',
+        maxHeight: '100%',
+        overflowY: 'auto'
+
+    }
 };
 const InteriorDisplay = () => {
     const classes = useStyles();
@@ -118,19 +128,20 @@ const InteriorDisplay = () => {
                     aria-describedby="modal-modal-description"
                 >
                     <Box sx={style}>
-                        <Grid container  item xs={12} >
-                            <Grid item xs={5}>
+                        <Grid container item xs={12} >
+                            <Grid  className={classes.bigMainPart}>
+                            <Grid className={classes.firstPart}>
                                 <img src={home} alt="" className={classes.modalImg} />
                                 <div style={{marginTop:"30px"}}>
-                                    <div style={{border:"1px solid black", height:"80px", width:"200px", margin:"auto"}}>
+                                    <div className={classes.persentBorder}>
                                         <h1 style={{fontWeight:"600", textAlign:"center"}}>15% OFF</h1>
-                                        <div style={{backgroundColor:"gray", color:"White", padding:"3px", }}>On Home Interior</div>
+                                        <div className={classes.grayContain}>On Home Interior</div>
                                     </div>
 
                                 </div>
                             </Grid>
-                            <Grid item xs={7}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2" style={{fontSize:"30px"}}>
+                            <Grid className={classes.secPart}>
+                                <Typography id="modal-modal-title" variant="h6"  className={classes.header}>
                                 Get A Free Consultation
                                 </Typography>
                                 {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
@@ -165,6 +176,7 @@ const InteriorDisplay = () => {
                                         <div className={classes.mButton}>Vizag</div>
                                     </div>
                                 </Grid>
+                            </Grid>
                             </Grid>
                         </Grid>
                         {/* <Typography id="modal-modal-title" variant="h6" component="h2">

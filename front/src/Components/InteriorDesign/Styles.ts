@@ -88,6 +88,64 @@ export const useStyles = makeStyles({
     },
     modalImg: {
         maxWidth: "450px",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: "260px",
+            margin: "auto",
+
+        }
+    },
+    persentBorder:{
+        border:"1px solid black", height:"80px", width:"200px", margin:"auto",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: "260px",
+            // margin: "auto",
+            marginRight:"30px"
+
+        }
+    },
+    firstPart:{
+        maxWidth: "450px",
+
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: "280px",
+            // margin: "auto",
+
+        }
+    },
+    secPart:{
+         minWidth:"680px",
+        width:"100%",
+        marginLeft:"30px",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: "280px",
+            margin: "auto",
+            paddingTop:"15px",
+
+        }
+    },
+    bigMainPart:{
+        display:"flex", justifyContent:"space-between",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            display:"grid", 
+            gridTemplateColumns:"repeat(1,1fr)",
+            margin:"auto",
+            // flexDirection:"column",
+            height:"auto",
+            //display: "flex", 
+            // justifyContent: "center",
+           // flexDirection:"column",
+
+
+        }
+    },
+    grayContain:{
+        backgroundColor:"gray", color:"White", padding:"3px", 
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width: "260px",
+            margin: "auto",
+            marginTop:"18px",
+
+        }
     },
     mButton:{
         width:"auto",
@@ -101,12 +159,36 @@ export const useStyles = makeStyles({
     btnContainer:{
         display: "flex", 
         justifyContent: "space-between",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width:"250px",
+            display: "flex", 
+            flexDirection:"column",
+            gap:"10px",
+            // margin: "auto",
+
+        }
+
+    },
+    header:{
+        fontSize:"30px",
+        ['@media (max-width:768px)']: {
+            fontSize:"30px",
+            marginTop:"20px",
+        }
     },
     secBtnContain:{
         display: "grid", 
         gridTemplateColumns:"repeat(4, 1fr)",
         gap:"20px",
         height:"auto",
+        ['@media (max-width:768px)']: { // eslint-disable-line no-useless-computed-key
+            width:"250px",
+            display: "flex", 
+            flexDirection:"column",
+            gap:"10px",
+            // margin: "auto",
+
+        }
         // width:"400px"
     },
     wave: {
